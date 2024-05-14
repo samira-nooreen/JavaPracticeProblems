@@ -247,4 +247,58 @@ Input               Output
 100 200             300
                    
 10 40                50
-       
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q6)Good Turn
+Chef and Chefina are playing with dice. In one turn, both of them roll their dice at once.
+
+They consider a turn to be good if the sum of the numbers on their dice is greater than 
+6
+6.
+Given that in a particular turn Chef and Chefina got 
+𝑋
+X and 
+𝑌
+Y on their respective dice, find whether the turn was good.
+
+Input Format
+The first line of input will contain a single integer 
+𝑇
+T, denoting the number of test cases.
+Each test case contains two space-separated integers 
+𝑋
+X and 
+𝑌
+Y — the numbers Chef and Chefina got on their respective dice.
+Output Format
+For each test case, output on a new line, YES, if the turn was good and NO otherwise.
+
+Each character of the output may be printed in either uppercase or lowercase. That is, the strings NO, no, nO, and No will be treated as equivalent.
+
+Constraints
+1
+≤
+𝑇
+≤
+100
+1≤T≤100
+1
+≤
+𝑋
+,
+𝑌
+≤
+6
+1≤X,Y≤6
+Ans)
+Input
+4
+1 4
+3 4
+4 2
+2 6
+
+Output
+NO
+YES
+NO
+YES
