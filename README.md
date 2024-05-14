@@ -189,9 +189,62 @@ Constraints
 𝑏
 ≤
 1000
+
 1≤a,b≤1000
 Ans) 1 55
       Yes
       
      1  56
        No
+
+---------------------------------------------------------------------------------------------------------------------------------------
+Q5)Add Two Numbers
+Your task is very simple: given two integers 
+𝐴
+A and 
+𝐵
+B, write a program to add these two numbers and output the sum.
+
+Input Format
+The first line contains an integer 
+𝑇
+T, the total number of test cases.
+Then follow 
+𝑇
+T lines, each line contains two integers, 
+𝐴
+A and 
+𝐵
+B.
+Output Format
+For each test case, add 
+𝐴
+A and 
+𝐵
+B and display the sum in a new line.
+
+Constraints
+1
+≤
+𝑇
+≤
+1000
+1≤T≤1000
+0
+≤
+𝐴
+,
+𝐵
+≤
+10000
+0≤A,B≤10000
+
+Ans)
+Input               Output
+3
+1 2                  3
+
+100 200             300
+                   
+10 40                50
+       
