@@ -515,3 +515,200 @@ Test case
 15 coins. Hence, Chef will have to pay 
 30
 30 coins in total.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q10)Burgers
+Chef is fond of burgers and decided to make as many burgers as possible.
+
+Chef has 
+𝐴
+A patties and 
+𝐵
+B buns. To make 
+1
+1 burger, Chef needs 
+1
+1 patty and 
+1
+1 bun.
+Find the maximum number of burgers that Chef can make.
+
+Input Format
+The first line of input will contain an integer 
+𝑇
+T — the number of test cases. The description of 
+𝑇
+T test cases follows.
+The first and only line of each test case contains two space-separated integers 
+𝐴
+A and 
+𝐵
+B, the number of patties and buns respectively.
+Output Format
+For each test case, output the maximum number of burgers that Chef can make.
+
+Constraints
+1
+≤
+𝑇
+≤
+1000
+1≤T≤1000
+1
+≤
+𝐴
+,
+𝐵
+≤
+1
+0
+5
+1≤A,B≤10 
+5
+ 
+Sample 1:
+Input
+Output
+4
+2 2
+2 3
+3 2
+23 17
+2
+2
+2
+17
+Explanation:
+Test case 
+1
+1: Chef has 
+2
+2 patties and 
+2
+2 buns, and therefore Chef can make 
+2
+2 burgers.
+
+Test case 
+2
+2: Chef has 
+2
+2 patties and 
+3
+3 buns. Chef can make at most 
+2
+2 burgers by using 
+2
+2 patties and 
+2
+2 buns.
+
+Test case 
+3
+3: Chef has 
+3
+3 patties and 
+2
+2 buns. Chef can make at most 
+2
+2 burgers by using 
+2
+2 patties and 
+2
+2 buns.
+
+Test case 
+4
+4: Chef has 
+23
+23 patties and 
+17
+17 buns. Chef can make at most 
+17
+17 burgers by using 
+17
+17 patties and 
+17
+17 buns.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q11)Who is taller!
+Alice and Bob were having an argument about which of them is taller than the other. Charlie got irritated by the argument, and decided to settle the matter once and for all.
+
+Charlie measured the heights of Alice and Bob, and got to know that Alice's height is 
+𝑋
+X centimeters and Bob's height is 
+𝑌
+Y centimeters. Help Charlie decide who is taller.
+
+It is guaranteed that 
+𝑋
+≠
+𝑌
+X=Y.
+
+Input Format
+The first line of input will contain an integer 
+𝑇
+T — the number of test cases. The description of 
+𝑇
+T test cases follows.
+The first and only line of each test case contains two integers 
+𝑋
+X and 
+𝑌
+Y, as described in the problem statement.
+Output Format
+For each test case, output on a new line 
+A
+A if Alice is taller than Bob, else output 
+B
+B. The output is case insensitive, i.e, both 
+A
+A and 
+a
+a will be accepted as correct answers when Alice is taller.
+
+Constraints
+1
+≤
+𝑇
+≤
+1000
+1≤T≤1000
+100
+≤
+𝑋
+,
+𝑌
+≤
+200
+100≤X,Y≤200
+𝑋
+≠
+𝑌
+X=Y
+Sample 1:
+Input
+Output
+2
+150 160
+160 150
+B
+A
+Explanation:
+Test case 
+1
+1: In this case, 
+150
+<
+160
+150<160 so Bob is taller than Alice.
+
+Test case 
+2
+2: In this case, 
+160
+>
+150
+160>150 so Alice is taller than Bob.
