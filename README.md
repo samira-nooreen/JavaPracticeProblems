@@ -942,3 +942,69 @@ Now, among these
 1000. Hence, the second integer of the output is 
 0
 0.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q13)Roller Coaster
+Chef's son wants to go on a roller coaster ride. The height of Chef's son is 
+𝑋
+X inches while the minimum height required to go on the ride is 
+𝐻
+H inches. Determine whether he can go on the ride or not.
+
+Input Format
+The first line contains a single integer 
+𝑇
+T - the number of test cases. Then the test cases follow.
+The first and only line of each test case contains two integers 
+𝑋
+X and 
+𝐻
+H - the height of Chef's son and the minimum height required for the ride respectively.
+Output Format
+For each test case, output in a single line, YES if Chef's son can go on the ride. Otherwise, output NO.
+
+You may print each character of YES and NO in uppercase or lowercase (for example, yes, yEs, Yes will be considered identical)
+
+Constraints
+1
+≤
+𝑇
+≤
+1000
+1≤T≤1000
+1
+≤
+𝑋
+,
+𝐻
+≤
+100
+1≤X,H≤100
+Sample 1:
+Input
+Output
+4
+15 20
+50 48
+32 32
+38 39
+NO
+YES
+YES
+NO
+Explanation:
+Test case 1: Chef's son can not go on the ride as his height 
+<
+< the minimum required height.
+
+Test case 2: Chef's son can go on the ride as his height 
+≥
+≥ the minimum required height.
+
+Test case 3: Chef's son can go on the ride as his height 
+≥
+≥ the minimum required height.
+
+Test case 4: Chef's son can not go on the ride as his height 
+<
+< the minimum required height.
