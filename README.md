@@ -1307,3 +1307,18 @@ Requirements:
 •	Four variables must be declared.
 •	Comment out unused variables.
 •	The output of the program must not change.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q21)Write a program that reads two integers from the keyboard and displays their sum and product.
+
+Input example:
+
+10
+20
+Output example:
+
+30
+200
+Requirements:
+The program must read two integers from the keyboard.
+The program should display the sum and product of read numbers.
