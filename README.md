@@ -1285,3 +1285,25 @@ Example output:
 
 Amigo
 10/18/2012
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q19)Write a program in which declare the name and city variables of type String, and the age variable of type int.
+
+Immediately assign values to them in the declaration line.
+
+Requirements:
+Declare two variables of type String.
+Declare one variable of type int.
+Variable names of type String must be name and city.
+The name of the variable of type int must be age.
+Values must immediately be assigned to variables.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q20)The program needs to be fixed to make it work.
+
+To do this, add a type to variables that do not have it, and comment out those variables that are not used anywhere.
+
+Requirements:
+•	The program must display text.
+•	Four variables must be declared.
+•	Comment out unused variables.
+•	The output of the program must not change.
