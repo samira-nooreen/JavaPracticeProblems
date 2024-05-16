@@ -1276,3 +1276,12 @@ output:
 0
 4
 1
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q18)Write a program that displays the name and date of birth in the MM/DD/YYYY format.
+
+Don't mix up the month and date. The month must be between 01..12, and the year must start with 19 or 20. The name and date should be displayed on separate lines (two lines in total).
+
+Example output:
+
+Amigo
+10/18/2012
