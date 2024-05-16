@@ -1259,3 +1259,20 @@ Test case
 42 words. Hence, the total number of words is 
 3990
 3990.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q17)Write a program that displays the results of mathematical operations:
+
+2 + 2
+2 - 2
+2 * 2
+2 / 2
+Each result on a new line. Do not use numbers other than 2 in your code.
+
+Example
+output:
+
+4
+0
+4
+1
