@@ -1,15 +1,10 @@
-public class Car {
-    private int doors;
-    private int wheels;
-    private String model;
-    private String engine;
-    private String colour;
+public class Car extends Vehical{
+    private int door;
+    private int engineCapacity;
 
-    public void setModel(String model){
-        this.model = model;
+    public Car(String name, int door, int engineCapacity) {
+        super(name);
+        this.door = door;
+        this.engineCapacity = engineCapacity;
     }
-    public String getModel(){
-        return  this.model;
-    }
-
 }
