@@ -1,84 +1,63 @@
-class BankAccount{
-    private int accountNumber ;
-    private int balance;
-    private int phoneNumber;
-    private String customerName;
-    private String email;
-
-
-    public void setAccountNumber(int accountNumber){
-        this.accountNumber = accountNumber;
-
-
-    }
-    public int getAccountNumber(){
-        return accountNumber;
-    }
-    public void setbalance(int balance){
-        this.balance = balance;
-
-    }
-    public int getbalance(){
-        return balance;
-    }
-    public void setphoneNumber(int phoneNumber){
-        this.phoneNumber = phoneNumber;
-
-    }
-    public int getphoneNumber(){
-        return phoneNumber;
-    }
-    public void setCustomerName(String customerName){
-        this.customerName=customerName;
-
-    }
-    public String getCustomerName(){
-        return customerName;
-    }
-    public void setemail(String email){
-        this.email=email;
-    }
-    public String getemail(){
-        return email;
-
-    }
-    //Methods
-    public void DepositFunds(int amount){
-       if (amount > 0){
-           balance += amount;
-           System.out.println("Deposited = "+amount+", New balance = "+balance);
-       }else {
-           System.out.println("Deposit amount must be positive");
-       }
-    }
-    public void WithdrawFunds(int amount){
-         if (amount > 0 && amount <= balance){
-             balance -= amount;
-             System.out.println("Withdrew = "+amount+", New balance = "+balance);
-         }else {
-             System.out.println("Invalid withdrawal amount .");
-         }
-    }
-
-}
+import java.util.ArrayList;
 
 public class Bank {
-    public static void main(String[] args) {
-BankAccount bankAccount = new BankAccount();
+    private String name;
+    private ArrayList<Branch> branches;
 
-bankAccount.setAccountNumber(14);
-bankAccount.setCustomerName("Sam");
-bankAccount.setemail("Sam@gmail.com");
-bankAccount.setphoneNumber(384737468);
-bankAccount.setbalance(50000);
+    public Bank(String name) {
+        this.name = name;
+        this.branches = new ArrayList<>();
+    }
 
-        System.out.println("Account Number = "+bankAccount.getAccountNumber());
-        System.out.println("Customer Name = "+bankAccount.getCustomerName());
-        System.out.println("Email : "+bankAccount.getemail());
-        System.out.println("Phone Number = "+bankAccount.getphoneNumber());
-        System.out.println("Balance = "+bankAccount.getbalance());
+    public boolean addBranch(String branchName) {
+        if (findBranch(branchName) == null) {
+            branches.add(new Branch(branchName));
+            return true;
+        }
+        return false; // Branch already exists
+    }
 
-        bankAccount.DepositFunds(2000);
-        bankAccount.WithdrawFunds(100);
+    public boolean addCustomer(String branchName, String customerName, double initialTransaction) {
+        Branch branch = findBranch(branchName);
+        if (branch != null) {
+            return branch.addNewCustomer(customerName, initialTransaction);
+        }
+        return false; // Branch not found
+    }
+
+    public boolean addTransaction(String branchName, String customerName, double transaction) {
+        Branch branch = findBranch(branchName);
+        if (branch != null) {
+            return branch.addCustomerTransaction(customerName, transaction);
+        }
+        return false; // Branch or customer not found
+    }
+
+    public boolean listCustomers(String branchName, boolean showTransactions) {
+        Branch branch = findBranch(branchName);
+        if (branch != null) {
+            System.out.println("Customer details for branch " + branch.getName());
+            for (Customer customer : branch.getCustomers()) {
+                System.out.println("Customer: " + customer.getName());
+                if (showTransactions) {
+                    System.out.println("Transactions:");
+                    for (Double transaction : customer.getTransactions()) {
+                        System.out.println("  " + transaction);
+                    }
+                }
+            }
+            return true;
+        }
+        return false; // Branch not found
+    }
+
+    private Branch findBranch(String branchName) {
+        for (Branch branch : branches) {
+            if (branch.getName().equals(branchName)) {
+                return branch;
+            }
+        }
+        return null;
     }
 }
+
