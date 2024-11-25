@@ -1,6 +1,4 @@
-public class Bicycle extends Vehical2{
-    @Override
-    public void go(){
-        System.out.println("The Bicycle begins moving");
-    }
+public interface Bicycle {
+    void applyBrake(int decrement);
+    void speedUp(int increment);
 }
