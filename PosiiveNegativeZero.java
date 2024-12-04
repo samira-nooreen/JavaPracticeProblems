@@ -21,7 +21,7 @@ public class Main
         } else if(num < 0 ){
              System.out.println("Negative");
         } else{
-             System.out.println("");
+             System.out.println("Zero");
         }
         
         
@@ -33,7 +33,7 @@ public class Main
         } else if(num < 0 ){
              System.out.println("Negative");
         } else{
-             System.out.println("");
+             System.out.println("Zero");
         }
         
         num = scanner.nextInt(); // input third number
@@ -43,7 +43,7 @@ public class Main
         } else if(num < 0 ){
              System.out.println("Negative");
         } else{
-             System.out.println("");
+             System.out.println("Zero");
         }
     }
 }
