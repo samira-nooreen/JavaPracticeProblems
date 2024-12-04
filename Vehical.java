@@ -1,7 +1,4 @@
-public class Vehical {
-    private String name;
+public abstract class Vehical {
 
-    public Vehical(String name){
-        this.name = name;
-    }
+    abstract void go();
 }
