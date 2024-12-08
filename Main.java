@@ -9,7 +9,7 @@ public class Main {
         items.add(4);
         items.add(5);
 
-       printDoubled(items);
+        printDoubled(items);
     }
 
     private static void printDoubled(ArrayList<Integer> n){

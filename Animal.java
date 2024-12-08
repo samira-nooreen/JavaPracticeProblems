@@ -1,10 +1,9 @@
-public abstract class Animal {
-    int age;
+public class Animal {
+
     String name;
+    int age;
 
-    public abstract void makeNoise();
-
-    public void printName(){
-        System.out.println("My name is " + name);
+    public void eat(){
+        System.out.println("Muuchh munnch...");
     }
 }

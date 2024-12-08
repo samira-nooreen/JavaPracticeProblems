@@ -1,12 +1,3 @@
-public class Cat extends Animal implements AnimalStuff {
+public class Cat extends Animal{
 
-
-    public void makeNoise() {
-        System.out.println("Meowww...");
-    }
-
-    @Override
-    public void poop() {
-        System.out.println("cheeee");
-    }
 }
