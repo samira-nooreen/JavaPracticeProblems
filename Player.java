@@ -1,11 +1,11 @@
-public class Player {
+public abstract class Player {
+    private String name;
 
-    public String fullName;
-    public int health;
-    public String weapons;
+    public Player(String name) {
+        this.name = name;
+    }
 
-
-    public int healthRemaining(){
-        return this.health;
+    public String getName() {
+        return name;
     }
 }
