@@ -1,10 +1,33 @@
-public abstract class Student {
-    public void takeAttendence(){
-        System.out.println("ake attendence called");
-    }
-    public int getMarks(){
-        return 555;
+import java.util.Objects;
+
+public class Student {
+
+    String name ;
+    int rollno;
+
+    public Student(String name , int rollno){
+        this.name = name;
+        this.rollno = rollno;
     }
 
-    public abstract void giveExam();
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", rollno=" + rollno +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return rollno == student.rollno;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(rollno);
+    }
 }
